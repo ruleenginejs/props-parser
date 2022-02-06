@@ -1,7 +1,7 @@
 {
   "name": "@ruleenginejs/props-parser",
   "version": "1.0.0",
-  "description": "Props parser",
+  "description": "Props Parser",
   "main": "index.js",
   "types": "index.d.ts",
   "files": [
@@ -31,7 +31,8 @@
   },
   "keywords": [
     "ruleengine",
-    "parser"
+    "parser",
+    "annotation"
   ],
   "author": "Nikolay Naumenkov",
   "license": "MIT",
