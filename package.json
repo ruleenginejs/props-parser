@@ -1,0 +1,48 @@
+{
+  "name": "@ruleenginejs/props-parser",
+  "version": "1.0.0",
+  "description": "Props parser",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "lib",
+    "index.js",
+    "index.d.ts"
+  ],
+  "scripts": {
+    "test": "jest",
+    "postversion": "npm run push",
+    "push": "git push origin master --tags"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.17.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.0",
+    "@types/node": "^17.0.15",
+    "eslint": "^8.8.0",
+    "eslint-plugin-jest": "^26.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "jest": "^27.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruleenginejs/props-parser.git"
+  },
+  "keywords": [
+    "ruleengine",
+    "parser"
+  ],
+  "author": "Nikolay Naumenkov",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/ruleenginejs/props-parser/issues"
+  },
+  "homepage": "https://github.com/ruleenginejs/props-parser#readme",
+  "engines": {
+    "node": ">=8.10.0"
+  }
+}
