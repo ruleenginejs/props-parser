@@ -35,9 +35,6 @@
   ],
   "author": "Nikolay Naumenkov",
   "license": "MIT",
-  "publishConfig": {
-    "access": "public"
-  },
   "bugs": {
     "url": "https://github.com/ruleenginejs/props-parser/issues"
   },
