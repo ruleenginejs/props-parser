@@ -8,7 +8,7 @@ npm install @ruleenginejs/props-parser
 
 ## Usage
 
-### handler.js
+### file.js
 
 ```js
 // @prop('foo', 'string')
@@ -26,7 +26,7 @@ export default (context, next) => {
 const propsParser = require('@ruleenginejs/props-parser');
 const fs = require('fs');
 
-const contents = fs.readFileSync('handler.js', 'utf8');
+const contents = fs.readFileSync('file.js', 'utf8');
 console.log(propsParser.parse(contents));
 
 /*
