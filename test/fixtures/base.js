@@ -3,5 +3,5 @@
 // @prop('bar', 'string', ['a', 'b', 'c'], 'b')
 // @prop('baz', 'boolean', true)
 module.exports = (context, next) => {
-  next();
+  next(); // next
 }

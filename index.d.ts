@@ -1,7 +1,3 @@
-interface ParseOptions {
-  sourceType?: string;
-}
-
 interface ResultItem {
   type: 'string' | 'boolean';
   prop: string;
@@ -11,4 +7,4 @@ interface ResultItem {
 
 type ParseResult = Array<ResultItem>
 
-export function parse(input: string, options?: ParseOptions): ParseResult;
+export function parse(input: string): ParseResult;

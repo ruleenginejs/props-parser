@@ -14,9 +14,6 @@
     "postversion": "npm run push",
     "push": "git push origin master --tags"
   },
-  "dependencies": {
-    "@babel/parser": "^7.17.0"
-  },
   "devDependencies": {
     "@types/jest": "^27.4.0",
     "@types/node": "^17.0.15",
