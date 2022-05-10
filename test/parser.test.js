@@ -2,7 +2,7 @@ const propsParser = require('..');
 const path = require('path');
 const fs = require('fs');
 
-const fixtures = path.resolve(__dirname, "fixtures");
+const fixtures = path.resolve(__dirname, 'fixtures');
 
 describe('props-parser', () => {
   it('string property without default value', () => {
@@ -75,7 +75,7 @@ describe('props-parser', () => {
     lines.push("// @prop('a', 'string', ['b', 'c', 'd'], 'c')");
     lines.push("// @prop('f', 'boolean')");
     lines.push("// @prop('e', 'string', 'z')");
-    const actual = propsParser.parse(lines.join("\n"));
+    const actual = propsParser.parse(lines.join('\n'));
     expect(actual.length).toEqual(3);
     expect(actual[0]).toMatchObject({
       type: 'string',
@@ -184,9 +184,17 @@ describe('props-parser', () => {
   });
 
   it('should throw error when input not string', () => {
-    expect(() => { propsParser.parse({}) }).toThrowError('input must be a string');
-    expect(() => { propsParser.parse(1) }).toThrowError('input must be a string');
-    expect(() => { propsParser.parse(false) }).toThrowError('input must be a string');
-    expect(() => { propsParser.parse([]) }).toThrowError('input must be a string');
+    expect(() => {
+      propsParser.parse({});
+    }).toThrowError('input must be a string');
+    expect(() => {
+      propsParser.parse(1);
+    }).toThrowError('input must be a string');
+    expect(() => {
+      propsParser.parse(false);
+    }).toThrowError('input must be a string');
+    expect(() => {
+      propsParser.parse([]);
+    }).toThrowError('input must be a string');
   });
 });

@@ -4,4 +4,4 @@
 // @prop('baz', 'boolean', true)
 export default (context, next) => {
   next();
-}
+};

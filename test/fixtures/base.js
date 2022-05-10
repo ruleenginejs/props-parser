@@ -4,4 +4,4 @@
 // @prop('baz', 'boolean', true)
 module.exports = (context, next) => {
   next(); // next
-}
+};
