@@ -14,8 +14,7 @@
     "format": "prettier --write \"{lib,test}/**/*.js\"",
     "lint": "eslint \"{lib,test}/**/*.js\" --fix",
     "postversion": "npm run push",
-    "push": "git push origin master --tags",
-    "prepare": "husky install"
+    "push": "git push origin master --tags"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
