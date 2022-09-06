@@ -1,6 +1,6 @@
 {
   "name": "@ruleenginejs/props-parser",
-  "version": "1.0.3",
+  "version": "1.0.2",
   "description": "Props Parser",
   "main": "index.js",
   "types": "index.d.ts",
